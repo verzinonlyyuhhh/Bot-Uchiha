@@ -1,0 +1,1 @@
+(content of autoWelcome.js)
