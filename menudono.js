@@ -1,5 +1,14 @@
-const menudono = (prefix, nomeBot, numeroDono, nomeDono, hora, data, pushname, sender) => {
-return `
+const menudono = (
+  prefix,
+  nomeBot,
+  numeroDono,
+  nomeDono,
+  hora,
+  data,
+  pushname,
+  sender,
+) => {
+  return `
 ╭━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╮
 │𝐌𝐀𝐍𝐔 𝐃𝐎𝐍𝐎
 ╰━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╯
@@ -10,6 +19,6 @@ return `
 │${prefix}bangp
 │${prefix}unbangp
 ╰━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╯
-`
-}
-exports.menudono = menudono
+`;
+};
+exports.menudono = menudono;

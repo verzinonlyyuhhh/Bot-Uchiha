@@ -1,6 +1,14 @@
-
-const menuadm = (prefix, nomeBot, numeroDono, nomeDono, hora, data, pushname, sender) => {
-return `
+const menuadm = (
+  prefix,
+  nomeBot,
+  numeroDono,
+  nomeDono,
+  hora,
+  data,
+  pushname,
+  sender,
+) => {
+  return `
 ╭━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╮
 │𝐌𝐄𝐍𝐔 𝐀𝐃𝐌𝐈𝐍𝐒
 ╰━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╯
@@ -23,6 +31,6 @@ return `
 ┃✾➛${prefix}resetarlink
 ┃✾➛${prefix}linkgp
 ╰━━━━𖧹ٜ⛩ٜ𖧹•━━━━━╯
-`
-}
-exports.menuadm = menuadm
+`;
+};
+exports.menuadm = menuadm;

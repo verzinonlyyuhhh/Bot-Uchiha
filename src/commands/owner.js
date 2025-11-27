@@ -1,7 +1,7 @@
 // Exclusive Owner Command System
 
 const exclusiveOwnerCommands = {
-    // your commands here
+  // your commands here
 };
 
 module.exports = exclusiveOwnerCommands;

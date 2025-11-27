@@ -1,10 +1,10 @@
 // 🔱 SUBMENUS TEMÁTICOS UCHIHA 🔱
 
 export async function submenuHandler(sock, message, category) {
-    const remoteJid = message.key.remoteJid;
+  const remoteJid = message.key.remoteJid;
 
-    const submenus = {
-        'economia': `╔════════════════════════════════════╗
+  const submenus = {
+    economia: `╔════════════════════════════════════╗
 ║    💰 ECONOMIA - SISTEMA UCHIHA    ║
 ╚════════════════════════════════════╝
 
@@ -23,8 +23,8 @@ Comandos disponíveis:
 
 ✨ Ganhe moedas completando desafios!
         `,
-        
-        'xp': `╔════════════════════════════════════╗
+
+    xp: `╔════════════════════════════════════╗
 ║   📈 XP E RANKING - PODER UCHIHA   ║
 ╚════════════════════════════════════╝
 
@@ -44,8 +44,8 @@ Comandos disponíveis:
 💡 Ganhe 5 XP a cada mensagem!
    Suba de nível a cada 100 XP!
         `,
-        
-        'diversao': `╔════════════════════════════════════╗
+
+    diversao: `╔════════════════════════════════════╗
 ║   🎮 DIVERSÃO - LAZER UCHIHA       ║
 ╚════════════════════════════════════╝
 
@@ -64,8 +64,8 @@ Comandos disponíveis:
 
 Divirta-se enquanto ganha XP!
         `,
-        
-        'info': `╔════════════════════════════════════╗
+
+    info: `╔════════════════════════════════════╗
 ║   ℹ️ INFORMAÇÕES - UCHIHA BOT      ║
 ╚════════════════════════════════════╝
 
@@ -81,8 +81,8 @@ Comandos disponíveis:
 
 Desenvolvido com poder Uchiha!
         `,
-        
-        'utilidades': `╔════════════════════════════════════╗
+
+    utilidades: `╔════════════════════════════════════╗
 ║   🛠️ UTILIDADES - FERRAMENTAS      ║
 ╚════════════════════════════════════╝
 
@@ -100,11 +100,13 @@ Comandos disponíveis:
    └ Ganhar 5 XP automaticamente!
 
 Mantenha o bot funcionando!
-        `
-    };
+        `,
+  };
 
-    const message_text = submenus[category] || `❌ Categoria não encontrada!
+  const message_text =
+    submenus[category] ||
+    `❌ Categoria não encontrada!
 
 Use !menu para voltar ao menu principal`;
-    await sock.sendMessage(remoteJid, { text: message_text });
+  await sock.sendMessage(remoteJid, { text: message_text });
 }

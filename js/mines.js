@@ -1,16 +1,16 @@
 async function getMinesPositions(minecor, mines_qnts) {
-var mines_cord = []
-while(mines_cord.length != mines_qnts) {
-i = Math.floor(Math.random() * minecor.length + 0);
-if (!mines_cord.includes(minecor[i])) {
-mines_cord.push(minecor[i])
-}
-}
-return mines_cord
+  var mines_cord = [];
+  while (mines_cord.length != mines_qnts) {
+    i = Math.floor(Math.random() * minecor.length + 0);
+    if (!mines_cord.includes(minecor[i])) {
+      mines_cord.push(minecor[i]);
+    }
+  }
+  return mines_cord;
 }
 
 const MinesHelp = (prefix) => {
-return `🗺 *MANUAL DO JOGO*
+  return `🗺 *MANUAL DO JOGO*
 -
 O jogo do campo minado consiste em um campo de minas escondidas em que o jogador deve escolher uma coordenada onde não possui mina, a cada 3 acertos o jogador tem o direito de uma dica de onde uma ou mais das minas estão localizadas. 
 -
@@ -36,7 +36,7 @@ Caso ele escolha uma coordenada onde tem uma mina a sequências de acertos e sua
     • Dá dica da localização de uma bomba em uma fileira ou coluna.
 -
 • *${prefix}minareset*
-    • Reseta a partida atual de campo minado.`
-}
+    • Reseta a partida atual de campo minado.`;
+};
 
-module.exports =  { getMinesPositions, MinesHelp }
+module.exports = { getMinesPositions, MinesHelp };

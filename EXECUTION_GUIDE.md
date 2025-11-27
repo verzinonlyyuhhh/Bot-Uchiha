@@ -1,6 +1,7 @@
 # EXECUTION_GUIDE.md
 
 ## Table of Contents
+
 1. [Prerequisites](#prerequisites)
 2. [Installation](#installation)
 3. [Execution](#execution)
@@ -11,11 +12,13 @@
 8. [Next Steps](#next-steps)
 
 ## Prerequisites
+
 - Node.js (version X.X.X or later)
 - npm (version X.X.X or later)
 - Any other dependencies or tools required for running the script
 
 ## Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/Bot-Uchiha.git
@@ -30,6 +33,7 @@
    ```
 
 ## Execution
+
 1. Ensure that all prerequisites are met and the installation process is completed.
 2. Execute the script:
    ```bash
@@ -37,21 +41,25 @@
    ```
 
 ## Verification
+
 - Check the console output for any errors.
 - Verify that the expected configuration or setup is complete (specific configurations here).
 
 ## Testing
+
 - Run unit tests (if available) to ensure everything is functioning as expected:
   ```bash
   npm test
   ```
 
 ## Troubleshooting
+
 - Common issues and solutions:
   - Issue 1: Description and solution.
   - Issue 2: Description and solution.
 
 ## Git Commit Procedures
+
 1. Stage your changes:
    ```bash
    git add .
@@ -66,5 +74,6 @@
    ```
 
 ## Next Steps
+
 - Review the README for any further instructions.
 - Explore the codebase for additional features or scripts.

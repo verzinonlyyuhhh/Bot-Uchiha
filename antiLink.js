@@ -1,5 +1,5 @@
 module.exports = {
-  name: "antiLink",
+  name: 'antiLink',
 
   init(ctx) {
     // Nada necessário no init
@@ -10,13 +10,14 @@ module.exports = {
     const sender = msg.key.participant || msg.key.remoteJid;
 
     if (!text) return;
-    if (!text.includes("http://") && !text.includes("https://")) return;
+    if (!text.includes('http://') && !text.includes('https://')) return;
 
     // Permit VIP/ADM
     const metadata = await sock.groupMetadata(jid).catch(() => null);
     const isAdmin =
-      metadata?.participants?.some(p => 
-        p.id === sender && (p.admin === "admin" || p.admin === "superadmin")
+      metadata?.participants?.some(
+        (p) =>
+          p.id === sender && (p.admin === 'admin' || p.admin === 'superadmin'),
       ) || false;
 
     const isVIP =
@@ -26,13 +27,13 @@ module.exports = {
     if (isAdmin || isVIP) return;
 
     // Se for grupo
-    if (jid.endsWith("@g.us")) {
+    if (jid.endsWith('@g.us')) {
       await sock.sendMessage(jid, {
-        text: `🚫 *LINK DETECTADO!* @${sender.split("@")[0]}`,
-        mentions: [sender]
+        text: `🚫 *LINK DETECTADO!* @${sender.split('@')[0]}`,
+        mentions: [sender],
       });
 
       await sock.sendMessage(jid, { delete: msg.key });
     }
-  }
+  },
 };

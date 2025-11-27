@@ -1,11 +1,11 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 module.exports = {
-  name: "logs",
+  name: 'logs',
 
   init({ DATA_DIR }) {
-    this.logPath = path.join(DATA_DIR, "logs.txt");
+    this.logPath = path.join(DATA_DIR, 'logs.txt');
   },
 
   async onMessage({ msg, text }) {
@@ -14,5 +14,5 @@ module.exports = {
 
     const line = `[${new Date().toISOString()}] ${sender} -> ${jid}: ${text}\n`;
     fs.appendFileSync(this.logPath, line);
-  }
+  },
 };

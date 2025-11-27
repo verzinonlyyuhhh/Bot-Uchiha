@@ -1,5 +1,5 @@
 const tabela = (prefix, NomeDoBot) => {
-return`
+  return `
 𝐓𝐀𝐁𝐄𝐋𝐀 𝐁𝐘: ${NomeDoBot}🔥
 
 
@@ -255,7 +255,7 @@ H⃟༻ I⃟༻ J⃟༻K⃟༻ L⃟༻M⃟༻ N⃟༻O⃟༻ P⃟༻ Q⃟༻R⃟
 
 𝐁𝐘: ${NomeDoBot}🔥
 
-`
-}
+`;
+};
 
-exports.tabela = tabela
+exports.tabela = tabela;

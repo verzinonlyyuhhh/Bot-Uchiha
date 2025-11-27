@@ -1,11 +1,11 @@
 // commands/help.js
 module.exports = {
-    name: "help",
-    description: "Mostra o menu visual de todos os comandos",
-    run: async ({ sock, msg }) => {
-        const jid = msg.key.remoteJid;
+  name: 'help',
+  description: 'Mostra o menu visual de todos os comandos',
+  run: async ({ sock, msg }) => {
+    const jid = msg.key.remoteJid;
 
-        const helpMessage = `
+    const helpMessage = `
 🤖 *𝐔𝐜𝐡𝐢𝐡𝐚 𝐁𝐨𝐭 — ᗰᗴᑎᑌ ᗷOT* 🔱
 👁️ Poder do Sharingan ativo.
 
@@ -55,6 +55,6 @@ module.exports = {
 📌 Para comandos interativos com botões: digite *!menu*
 `;
 
-        await sock.sendMessage(jid, { text: helpMessage });
-    }
-};;;
+    await sock.sendMessage(jid, { text: helpMessage });
+  },
+};

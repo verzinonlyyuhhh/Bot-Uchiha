@@ -4,7 +4,7 @@ import { BOT_NAME } from './conf.js';
 
 // Animações de frames para o menu
 const animacaoFrames = [
-    `
+  `
 ╔════════════════════════════════════╗
 ║                                    ║
 ║    🔱 ⚫ UCHIHA BOT ⚫ 🔱          ║
@@ -13,7 +13,7 @@ const animacaoFrames = [
 ║                                    ║
 ╚════════════════════════════════════╝
     `,
-    `
+  `
 ╔════════════════════════════════════╗
 ║      ◈ ◆ ◇ ◆ ◈ ◆ ◇ ◆ ◈          ║
 ║                                    ║
@@ -24,7 +24,7 @@ const animacaoFrames = [
 ║      ◈ ◆ ◇ ◆ ◈ ◆ ◇ ◆ ◈          ║
 ╚════════════════════════════════════╝
     `,
-    `
+  `
 ╔════════════════════════════════════╗
 ║  ⚡ ✦ ◉ ✦ ⚡ ✦ ◉ ✦ ⚡ ✦ ◉ ✦ ⚡  ║
 ║                                    ║
@@ -34,37 +34,57 @@ const animacaoFrames = [
 ║                                    ║
 ║  ⚡ ✦ ◉ ✦ ⚡ ✦ ◉ ✦ ⚡ ✦ ◉ ✦ ⚡  ║
 ╚════════════════════════════════════╝
-    `
+    `,
 ];
 
 export async function menuHandler(sock, message) {
-    // Enviando animação
-    let frameIndex = 0;
-    
-    // Primeiro frame com animação
-    const menuMessage = {
-        text: `${animacaoFrames[0]}
+  // Enviando animação
+  let frameIndex = 0;
+
+  // Primeiro frame com animação
+  const menuMessage = {
+    text: `${animacaoFrames[0]}
 
 ╔════════════════════════════════════╗
 ║     🎯 ESCOLHA UMA CATEGORIA 🎯    ║
 ╚════════════════════════════════════╝`,
-        footer: BOT_NAME,
-        buttons: [
-            { buttonId: 'economia', buttonText: { displayText: '💰 Economia' }, type: 1 },
-            { buttonId: 'xp', buttonText: { displayText: '📈 XP & Ranking' }, type: 1 },
-            { buttonId: 'diversao', buttonText: { displayText: '🎮 Diversão' }, type: 1 },
-            { buttonId: 'info', buttonText: { displayText: 'ℹ️ Informações' }, type: 1 },
-            { buttonId: 'utilidades', buttonText: { displayText: '🛠️ Utilidades' }, type: 1 }
-        ],
-        headerType: 1
-    };
+    footer: BOT_NAME,
+    buttons: [
+      {
+        buttonId: 'economia',
+        buttonText: { displayText: '💰 Economia' },
+        type: 1,
+      },
+      {
+        buttonId: 'xp',
+        buttonText: { displayText: '📈 XP & Ranking' },
+        type: 1,
+      },
+      {
+        buttonId: 'diversao',
+        buttonText: { displayText: '🎮 Diversão' },
+        type: 1,
+      },
+      {
+        buttonId: 'info',
+        buttonText: { displayText: 'ℹ️ Informações' },
+        type: 1,
+      },
+      {
+        buttonId: 'utilidades',
+        buttonText: { displayText: '🛠️ Utilidades' },
+        type: 1,
+      },
+    ],
+    headerType: 1,
+  };
 
-    await sock.sendMessage(message.key.remoteJid, menuMessage);
+  await sock.sendMessage(message.key.remoteJid, menuMessage);
 }
 
 // Menu estilizado com tema Uchiha
 export async function sendUchihaMenu(sock, remoteJid) {
-    const menu = `
+  const menu = `
 ╔════════════════════════════════════╗
 ║                                    ║
 ║   🔱 UCHIHA BOT - MENU PRINCIPAL   ║
@@ -108,6 +128,6 @@ export async function sendUchihaMenu(sock, remoteJid) {
 
          🔱 Powered by Uchiha 🔱
 `;
-    
-    await sock.sendMessage(remoteJid, { text: menu });
+
+  await sock.sendMessage(remoteJid, { text: menu });
 }

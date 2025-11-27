@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "hash": {
+    "type": "Buffer",
+    "data": "NRZE44qiP7kxHP8USpLhgYQ+6BDglXjtoyMpXvywera544P4/M2uuSksu23kal63pxyPqTDqzqOXH0SHJ6GSIe4cFdW8FTpcSCACGWCumRi4BHDHcA4HL/X6nc/QMGYjc65La4GuNkNMt8J6mkwnxIzoOGfDRZkyqtS0Ceyt8/4="
+  },
+  "indexValueMap": {
+    "D+KVfRPdilyukbiDxxCJJHJ574QOgAGXQl8S+VRSl54=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "5Yh4GflZO+gyli3CoOm15eVnr24IiKh8b/bf/tIYMcY="
+      }
+    },
+    "FemEqdcCmORqRRerUBIyeMesvTjLAR4rDslkslIErq4=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "Ig/rB+nKsHufVZYKc+LXsUiHnWNsvBOhs7MMAoiPxuo="
+      }
+    },
+    "NpSTOQCmac+AU06bHSgxV5uqh5fVV5k+mkSOxKWq1zQ=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "nECp3MHjcaTx5X+VKulDt0pHHPQpj2jTDg7hqx1h9i8="
+      }
+    },
+    "VBnLMF6XVreUReRYC3clNwE6+i/Rxt4rTZxu4mHFWv0=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "cbkfUyx4u3kOtukhEO9qrg3Cn2ch9bs5i161BxQEHSc="
+      }
+    },
+    "qgimTjR0iaeExq9WVKSZgKVVFbb5aCwKMZe9nAveLao=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "ai65uUP20UB2hb7MygNgMLIT5BjPQ4Aw3ksUOZk9T6I="
+      }
+    },
+    "rS0P6Wfq5j8KNYQT2xuGYy+LPIZJMNVBhA2+5u82kjA=": {
+      "valueMac": {
+        "type": "Buffer",
+        "data": "xOLspTd7v+uqQSkTlOYA5MRLZ2p6w7lZPh4+yamOJWA="
+      }
+    }
+  }
+}

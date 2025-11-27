@@ -1,9 +1,9 @@
 module.exports = {
-  name: "vipSystem",
+  name: 'vipSystem',
 
   init({ VIP, CONFIG }) {},
 
   async onMessage() {
     // VIP é verificado no index.js, este arquivo mantém estrutura
-  }
+  },
 };

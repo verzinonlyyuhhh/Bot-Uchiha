@@ -1,1 +1,143 @@
-{"noiseKey":{"private":{"type":"Buffer","data":"qFdZUdlHyyPI+hzMh28fFVxUgAPKFFS/YmfS9judiVE="},"public":{"type":"Buffer","data":"Fuic81ifmFY5fZdUJmS3MPgl/mLtSmL88VMHxF0vGQY="}},"pairingEphemeralKeyPair":{"private":{"type":"Buffer","data":"GFKjxldZvaAtudID3YFKeUpnB2Q6+rVXjmf5D8ZizFk="},"public":{"type":"Buffer","data":"Lh5hpkoZjtSRNA/zhJN2YvRd939KHheED7C5CE3IVjk="}},"signedIdentityKey":{"private":{"type":"Buffer","data":"YMBD87Qu4Phv8raCUNthkGOQG5rkrJ8CtAOQGAtCFUo="},"public":{"type":"Buffer","data":"F2QxMJFhfwaKKUh0j2EVWG0YXF4Xdo3XRQMr2plm+1k="}},"signedPreKey":{"keyPair":{"private":{"type":"Buffer","data":"kB6Nvw2GHWidhI+ZRljyHmiYuzhWZOeJz2teZHatgX0="},"public":{"type":"Buffer","data":"BZgN+8XWaYKCJR78VGnLjFWNZ4BxfYhITvZDrIFDYXo="}},"signature":{"type":"Buffer","data":"pVmbfvx7vTnE0Ky5wTtIzuk6uelt9Cux7PtQZIOBPskc1hq/Xppab9RyhIBkd3zNU6A6fk6TyWid2rmLXwtODg=="},"keyId":1},"registrationId":185,"advSecretKey":"TsjmQSDJ0SUDpH/2N1q5OAG7rZWxbJGJC+9gfgjg8rQ=","processedHistoryMessages":[],"nextPreKeyId":65,"firstUnuploadedPreKeyId":65,"accountSyncCounter":0,"accountSettings":{"unarchiveChats":false},"registered":false,"account":{"details":"CNXP/AcQqOaWyQYYASAAKAA=","accountSignatureKey":"GkLFOZbrKcJl9u5ie+HKlvld7rRGkWimdib1Yh37D30=","accountSignature":"Lo7OdNvSI0hDJFpwcsTqi/Q74HMv1WHplOWtLrnaHsBZyFct21AxiikcUdK+My7JdnN2OqQcFhELha2nog6hDA==","deviceSignature":"Z4md1/A9Zu9HqL5oEk/IqTlu3+YWL4wGF4au4XIBMON+ngSfTKP2ZUJgQ/RgDfV+WYMFltddvhVcQYjrJ+6FAg=="},"me":{"id":"244955873027:21@s.whatsapp.net","lid":"111002087587919:21@lid","name":"𝐔𝐜𝐡𝐢𝐡𝐚 𝐁𝐨𝐭 🤖"},"signalIdentities":[{"identifier":{"name":"244955873027:21@s.whatsapp.net","deviceId":0},"identifierKey":{"type":"Buffer","data":"BRpCxTmW6ynCZfbuYnvhypb5Xe60RpFopnYm9WId+w99"}}],"platform":"android","routingInfo":{"type":"Buffer","data":"CAMICQgN"},"lastAccountSyncTimestamp":1764079356,"lastPropHash":"PWk5B","myAppStateKeyId":"AAAAAN7B"}
+{
+  "noiseKey": {
+    "private": {
+      "type": "Buffer",
+      "data": "CNguzwCuIM/oLVyL5J9P7kx0NOSlge82mMwoaAMNYnw="
+    },
+    "public": {
+      "type": "Buffer",
+      "data": "+Ej+JSGU/y95jco6bsJ2N/KfIRw12TYXfKhiHEZX1xs="
+    }
+  },
+  "pairingEphemeralKeyPair": {
+    "private": {
+      "type": "Buffer",
+      "data": "wHC2q10N1G3p6rx6jwj+Y5id/56qJ8xKZiEKua8Miks="
+    },
+    "public": {
+      "type": "Buffer",
+      "data": "Yi45c5gtiwtg2FJXQhiorfwnyITODnUZaw/f9e2KnXk="
+    }
+  },
+  "signedIdentityKey": {
+    "private": {
+      "type": "Buffer",
+      "data": "iFWodZWbMiTdKUtRwMD2Fgivo/Za1lPWrru10N7IhVw="
+    },
+    "public": {
+      "type": "Buffer",
+      "data": "NArskf1NdCpq2tC81wDnRlEOt3KCttZ6smiuunwf6R0="
+    }
+  },
+  "signedPreKey": {
+    "keyPair": {
+      "private": {
+        "type": "Buffer",
+        "data": "iClke3DlupjZz9Yn24Tn4dRh7PEkxoreHCj5EiSYN1k="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "IfYIkVb6ySqNoB1NxUH0k81wPXtb5NMY5lU1metDCTU="
+      }
+    },
+    "signature": {
+      "type": "Buffer",
+      "data": "B4K/169LqFx46k9XZbBGHhAdmjD5GTFbpqlrAzM0LjB2qUEu082A48RkjAAO8SSiWN0VFLA2/f7YVdKgvkfNAg=="
+    },
+    "keyId": 1
+  },
+  "registrationId": 61,
+  "advSecretKey": "2e+T3yDMFsKWEV/TPqkkkWLJiP0qQO63vRRqAELhJ4Q=",
+  "processedHistoryMessages": [
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "AC4856BE24760A7DF2B347599E9C2BD6",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239279
+    },
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "AC5BB520B1DF74631AA04EF5B73B6A8C",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239279
+    },
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "AC96693C5976FF724BC995A04224F39C",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239279
+    },
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "AC9EE607E1A55E596A8763D1FCBF5AE4",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239280
+    },
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "AC5CC8D6712B0885FB0AC80F5571A19F",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239515
+    },
+    {
+      "key": {
+        "remoteJid": "244955873027@s.whatsapp.net",
+        "fromMe": false,
+        "id": "ACF797359C7CF14D3953484CDF661DB4",
+        "participant": "",
+        "addressingMode": "pn"
+      },
+      "messageTimestamp": 1764239517
+    }
+  ],
+  "nextPreKeyId": 815,
+  "firstUnuploadedPreKeyId": 815,
+  "accountSyncCounter": 1,
+  "accountSettings": { "unarchiveChats": false },
+  "registered": false,
+  "account": {
+    "details": "CNXP/AcQnM+gyQYYAyAAKAA=",
+    "accountSignatureKey": "GkLFOZbrKcJl9u5ie+HKlvld7rRGkWimdib1Yh37D30=",
+    "accountSignature": "DyAkEmjx5Ul/1tvK0SL2cb7jlSpZ8XlubypJPucTFulv2hPtt0NwfIeo4zaylbuRd3NR1TJo9F3/HSKkMLVHAA==",
+    "deviceSignature": "/1lqyL9olAzFzpkxmQRI6m39NX0gPEGFbg7ybhnBlJL6MJcGQcAj/5niyP75jZlg1cWHIr18pY1ebSkiLXtsAg=="
+  },
+  "me": {
+    "id": "244955873027:23@s.whatsapp.net",
+    "lid": "111002087587919:23@lid",
+    "name": "𝐔𝐜𝐡𝐢𝐡𝐚 𝐁𝐨𝐭 🤖"
+  },
+  "signalIdentities": [
+    {
+      "identifier": { "name": "111002087587919:23@lid", "deviceId": 0 },
+      "identifierKey": {
+        "type": "Buffer",
+        "data": "BRpCxTmW6ynCZfbuYnvhypb5Xe60RpFopnYm9WId+w99"
+      }
+    }
+  ],
+  "platform": "android",
+  "routingInfo": { "type": "Buffer", "data": "CAMICQgN" },
+  "lastAccountSyncTimestamp": 1764239284,
+  "lastPropHash": "PWk5B",
+  "myAppStateKeyId": "AAAAAN7B"
+}

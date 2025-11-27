@@ -1,7 +1,7 @@
 const userSpam = {};
 
 module.exports = {
-  name: "antiSpam",
+  name: 'antiSpam',
 
   async onMessage({ sock, msg, text }) {
     const sender = msg.key.participant || msg.key.remoteJid;
@@ -14,8 +14,8 @@ module.exports = {
 
       if (userSpam[sender].count >= 5) {
         await sock.sendMessage(msg.key.remoteJid, {
-          text: `⚠️ *Spam detectado!* Diminua a velocidade @${sender.split("@")[0]}`,
-          mentions: [sender]
+          text: `⚠️ *Spam detectado!* Diminua a velocidade @${sender.split('@')[0]}`,
+          mentions: [sender],
         });
         userSpam[sender].count = 0;
       }
@@ -24,5 +24,5 @@ module.exports = {
     }
 
     userSpam[sender].last = now;
-  }
+  },
 };

@@ -1,9 +1,9 @@
 module.exports = {
-    name: "auto-responder",
-    execute: async (sock, msg) => {
-        const jid = msg.key.remoteJid;
+  name: 'auto-responder',
+  execute: async (sock, msg) => {
+    const jid = msg.key.remoteJid;
 
-        const answer = `
+    const answer = `
 🤖 *Auto-Responder configurado!*
 
 Respostas automáticas ativas para:
@@ -14,6 +14,6 @@ Respostas automáticas ativas para:
 
         `;
 
-        await sock.sendMessage(jid, { text: answer });
-    }
+    await sock.sendMessage(jid, { text: answer });
+  },
 };

@@ -16,21 +16,28 @@ export async function setupMessageHandler(sock) {
     if (m.key.remoteJid === 'status@broadcast' || m.key.fromMe) return;
 
     // Extrai dados da mensagem
-    const messageText = m.message?.conversation || m.message?.extendedTextMessage?.text || '';
+    const messageText =
+      m.message?.conversation || m.message?.extendedTextMessage?.text || '';
     const remoteJid = m.key.remoteJid;
     const userId = m.key.participant || remoteJid;
 
     // Garante que o usuário existe no banco de dados
     db.getOrCreateUser(userId);
 
-    UchihaLogger.log(`📨 [${new Date().toLocaleTimeString('pt-BR')}] Mensagem: ${messageText}`);
+    UchihaLogger.log(
+      `📨 [${new Date().toLocaleTimeString('pt-BR')}] Mensagem: ${messageText}`,
+    );
 
     // Trata comandos
     const commandHandled = await handleCommand(sock, m);
     if (commandHandled) return;
 
     // Trata respostas simples
-    const simpleResponseHandled = await handleSimpleResponse(sock, remoteJid, messageText);
+    const simpleResponseHandled = await handleSimpleResponse(
+      sock,
+      remoteJid,
+      messageText,
+    );
     if (simpleResponseHandled) return;
   });
 }

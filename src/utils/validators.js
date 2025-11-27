@@ -1,11 +1,11 @@
 // Validation functions
 
 function validateInput(input) {
-    // Implementation here
+  // Implementation here
 }
 
 function checkRequiredFields(fields) {
-    // Implementation here
+  // Implementation here
 }
 
 export { validateInput, checkRequiredFields };

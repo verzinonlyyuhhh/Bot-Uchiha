@@ -1,1 +1,9 @@
-{"keyData":"SgmTr5cA+bYVJGMytI3vvsKLYkdXuslO/WlCvR6l0NQ=","fingerprint":{"rawId":16721877,"currentIndex":1,"deviceIndexes":[0,1]},"timestamp":"1764078391110"}
+{
+  "keyData": "SgmTr5cA+bYVJGMytI3vvsKLYkdXuslO/WlCvR6l0NQ=",
+  "fingerprint": {
+    "rawId": 16721877,
+    "currentIndex": 1,
+    "deviceIndexes": [0, 1]
+  },
+  "timestamp": "1764078391110"
+}

@@ -1,5 +1,5 @@
 module.exports = {
-  name: "xpSystem",
+  name: 'xpSystem',
 
   init({ XP, writeJson, DATA_DIR }) {
     // XP já gerenciado no index.js, aqui apenas organizamos
@@ -7,5 +7,5 @@ module.exports = {
 
   async onMessage() {
     // XP já é calculado no index.js (por desempenho)
-  }
+  },
 };

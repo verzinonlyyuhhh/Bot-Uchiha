@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [main, master, develop]
   pull_request:
-    branches: [ main, master, develop ]
+    branches: [main, master, develop]
 
 jobs:
   lint-and-build:
@@ -15,22 +15,22 @@ jobs:
         node-version: [18. x, 20.x]
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run ESLint
-      run: npm run lint --if-present
+      - name: Run ESLint
+        run: npm run lint --if-present
 
-    - name: Run Prettier check
-      run: npm run format:check --if-present
+      - name: Run Prettier check
+        run: npm run format:check --if-present
 
-    - name: Build project
-      run: npm run build --if-present
+      - name: Build project
+        run: npm run build --if-present

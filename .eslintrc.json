@@ -1,6 +1,12 @@
 {
-  "env": {"node": true, "es2021": true},
+  "env": { "node": true, "es2021": true },
   "extends": ["eslint:recommended", "prettier"],
-  "parserOptions": {"ecmaVersion": "latest", "sourceType": "module"},
-  "rules": {"no-unused-vars": "warn", "no-console": "off", "indent": ["error", 2], "quotes": ["error", "single"], "semi": ["error", "always"]}
+  "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
 }

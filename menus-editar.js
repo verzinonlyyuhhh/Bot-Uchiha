@@ -1,6 +1,5 @@
-
 const menub = (prefix, NickDono, NomeDoBot, sender, packname) => {
-return`
+  return `
 ╭━━⪩ 愛 Informações 愛 ⪨━━
 │◦ Bot: ${NomeDoBot}
 │◦ Dono: ${NickDono}
@@ -94,13 +93,12 @@ return`
 
 exports.menub = menub;
 
-// MENU DE ADMINISTRADORES 
+// MENU DE ADMINISTRADORES
 
-const adms = (prefix, sender) => { 
-
-	return `​
+const adms = (prefix, sender) => {
+  return `​
 ╭═══════════════════ ⪨
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦══════════════════ ⪨
 ╭┤𝐌𝐄𝐍𝐔 𝐀𝐃𝐌
 │◦ ${prefix}Antiimg (1/0)
@@ -187,10 +185,9 @@ exports.adms = adms;
 // MENU DE DONO
 
 const menudono = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤 Usuário: @${sender.split("@")[0]}
+┃👤 Usuário: @${sender.split('@')[0]}
 ┃⚙️ Config: ${prefix}Configurar-bot
 ╰╦═════════════ ⪨
 ╭┤𝐌𝐄𝐍𝐔 𝐃𝐎𝐍𝐎
@@ -269,13 +266,12 @@ return `​
 
 exports.menudono = menudono;
 
-// MENU DE LOGOS 
+// MENU DE LOGOS
 
 const menulogos = (prefix, sender) => {
-  
   return `​
 ╭═══════════════════ ⪨
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦══════════════════ ⪨
 ╭┤𝐋𝐎𝐆𝐎 1 𝐓𝐄𝐗𝐓𝐎
 │◦ ${prefix}hackneon [TXT]
@@ -316,10 +312,9 @@ exports.menulogos = menulogos;
 // MENU DE ALTERAR ÁUDIOS E VÍDEOS
 
 const alteradores = (prefix, sender) => {
-
-return`​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐀𝐋𝐓𝐄𝐑𝐀𝐑-𝐕𝐈𝐃𝐄𝐎
 │◦ ${prefix}Videolento (marca)
@@ -342,13 +337,12 @@ return`​
 
 exports.alteradores = alteradores;
 
-// MENU PREMIUM 
+// MENU PREMIUM
 
-const menuprem = (prefix, sender) => { 
-
-return `​
+const menuprem = (prefix, sender) => {
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐌𝐄𝐍𝐔-𝐏𝐑𝐄𝐌𝐈𝐔𝐌
 │◦ ${prefix}ddd (31)
@@ -401,13 +395,12 @@ return `​
 
 exports.menuprem = menuprem;
 
-// MENU DE BRINCADEIRAS.. 
+// MENU DE BRINCADEIRAS..
 
 const brincadeiras = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐉𝐎𝐆𝐎𝐒
 │◦ ${prefix}Jogodavelha (@Marcar) 
@@ -546,10 +539,9 @@ exports.brincadeiras = brincadeiras;
 // MENU RPG DA CITY
 
 const rpgmenu = (prefix, sender) => {
-
-return`​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤き⃟🏙️ 𝐂𝐈𝐓𝐘 𝐎𝐅𝐈𝐂𝐈𝐀𝐋 🏙️⃟⃟き
 │◦ ${prefix}Lojadecavalos (Loja de cavalos)
@@ -589,10 +581,9 @@ exports.rpgmenu = rpgmenu;
 // MENU DE EFEITOS DE IMAGEM
 
 const efeitos = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐌𝐄𝐍𝐔-𝐃𝐄-𝐄𝐅𝐄𝐈𝐓𝐎𝐒
 │◦ ${prefix}lixo (marca uma imagem) 
@@ -605,18 +596,17 @@ return `​
 │◦ ${prefix}borrar (marca uma imagem) 
 │◦ ${prefix}merda (marca uma imagem)
 ╰══════════════ ⪨
-`; 
+`;
 };
 
 exports.efeitos = efeitos;
 
-// MENU ANIMES 
+// MENU ANIMES
 
 const animes = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐀𝐍𝐈𝐌𝐄𝐒-𝐄𝐃𝐈𝐓𝐒
 │◦ ${prefix}Editanime random
@@ -641,12 +631,11 @@ exports.animes = animes;
 // INFORMAÇÕES DO PROPRIETÁRIO
 
 const infodono = (prefix, NickDono, numerodn, NomeDoBot, sender) => {
-
-return `​
+  return `​
 ╭═══════════════════ ⪩
 ╰╮𝐈𝐍𝐅𝐎 𝐁𝐎𝐓
 ╭┤➥ Bot: *${NomeDoBot}*
-│◦ Usuário: *@${sender.split("@")[0]}*
+│◦ Usuário: *@${sender.split('@')[0]}*
 │◦ Dono: *${NickDono}*
 │◦ Biblioteca: Baileys MD
 │◦ Prefixo: ${prefix}
@@ -736,15 +725,14 @@ return `​
 `;
 };
 
-exports.infodono = infodono; 
+exports.infodono = infodono;
 
 const menu = (prefix, NickDono, numerodn, NomeDoBot, packname, sender) => {
-
-return `
+  return `
 ╭═══════════════════ ⪩
 ╰╮き⃟🩸𝐈𝐍𝐅𝐎 𝐁𝐎𝐓🩸⃟き
 ╭┤➥ Bot: *${NomeDoBot}*
-│◦ Usuário: *@${sender.split("@")[0]}*
+│◦ Usuário: *@${sender.split('@')[0]}*
 │◦ Minha Versão: *${packname.version}*
 │◦ Dono: *${NickDono}*
 │◦ Biblioteca: Baileys MD
@@ -835,15 +823,14 @@ return `
 `;
 };
 
-exports.menu = menu; 
+exports.menu = menu;
 
-// MENU FIGURINHAS 
+// MENU FIGURINHAS
 
 const figurinhas = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦═════════════ ⪨
 ╭┤𝐅𝐈𝐆𝐔𝐑𝐈𝐍𝐇𝐀𝐒
 │◦ ${prefix}Attp (Seu texto)
@@ -864,13 +851,12 @@ return `​
 `;
 };
 
-exports.figurinhas = figurinhas; 
+exports.figurinhas = figurinhas;
 
 // MENU DOWNLOADS
 
 const downloads = (prefix, sender) => {
-
-return `​╭━━━⪩ *Download etc* ⪨━━━
+  return `​╭━━━⪩ *Download etc* ⪨━━━
 │◦ ${prefix}print (xvideos.com)
 │◦ ${prefix}pesquisa (mc Kevin)
 │◦ ${prefix}soundcloud (link)
@@ -894,13 +880,12 @@ return `​╭━━━⪩ *Download etc* ⪨━━━
 
 exports.downloads = downloads;
 
-// MENU PORNO 
+// MENU PORNO
 
 const nsfw = (prefix, sender) => {
-
-return `​
+  return `​
 ╭═══════════════════ ⪨
-┃👤Usuário: @${sender.split("@")[0]}
+┃👤Usuário: @${sender.split('@')[0]}
 ╰╦══════════════════ ⪨
 ╭┤𝐌𝐄𝐍𝐔 +𝟏𝟖 (IMAGEM)
 │◦${prefix}gangbang
@@ -923,18 +908,17 @@ return `​
 │◦ ${prefix}Plaq8 (Plaquinha)
 │◦ ${prefix}Plaq9 (Plaquinha)
 ╰═══════════════════ ⪨
-`; 
+`;
 };
 
 exports.nsfw = nsfw;
 
-// MENU SEM PREFIXO 
+// MENU SEM PREFIXO
 
 const semprefixo = (prefix, sender) => {
-
-return `​
+  return `​
 ╭══════════════ ⪩
-┃👤 Usuário: @${sender.split("@")[0]}
+┃👤 Usuário: @${sender.split('@')[0]}
 ┃ _para os comando funcionar é_
 ┃ _necessário estar com o resposta ativada_
 ┃➥ ${prefix}Autorepo (1/0)
@@ -966,4 +950,4 @@ return `​
 `;
 };
 
-exports.semprefixo = semprefixo; 
+exports.semprefixo = semprefixo;

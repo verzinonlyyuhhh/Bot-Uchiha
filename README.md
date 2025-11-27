@@ -6,12 +6,14 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-ffca3b)](https://example.com)
 
 ## Requirements
+
 - Node.js v14+
 - npm v6+
 - WhatsApp account
 - Git
 
 ## Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/te1436/Bot-Uchiha.git
@@ -27,6 +29,7 @@ npm start
 ```
 
 ## Usage
+
 ```bash
 # Command examples
 !help  # List available commands
@@ -35,28 +38,35 @@ npm start
 ```
 
 ## Technologies
+
 - **Baileys** - Compatibility with WhatsApp Web
 - **Node.js** - JavaScript runtime
 - **Express** - Framework for Node.js
 - **SQLite** - Database for storage
 
 ## Project Structure
+
 - `src/` - Source code
 - `tests/` - Unit tests
 - `config/` - Configuration files
 
 ## Roadmap
+
 ### Completed
+
 - User authentication
 - Basic command handling
 
 ### In Development
+
 - Advanced feature implementation
 
 ### Next Features
+
 - Multimedia message support
 
 ## Support and Contact
+
 - WhatsApp: +244948963368
 - Telegram: @uchiha_all
 - Instagram: @ruben_siilver
@@ -64,10 +74,13 @@ npm start
 - GitHub: @te1436
 
 ## Author
+
 - Rúben Silver
 
 ## License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Theme
+
 - Colors: Red and Black throughout the document for Uchiha theme

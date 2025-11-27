@@ -1,1 +1,17 @@
-export const UCHIHA_EMOJIS = { sharingan: '👁️', power: '⚫', sword: '⚔️', lightning: '⚡', fire: '🔥', victory: '🎯', ranking: '📈', economy: '💰', fun: '🎮', info: 'ℹ️', tools: '🛠️', error: '❌', success: '✅', warning: '⚠️', loading: '⏳', };
+export const UCHIHA_EMOJIS = {
+  sharingan: '👁️',
+  power: '⚫',
+  sword: '⚔️',
+  lightning: '⚡',
+  fire: '🔥',
+  victory: '🎯',
+  ranking: '📈',
+  economy: '💰',
+  fun: '🎮',
+  info: 'ℹ️',
+  tools: '🛠️',
+  error: '❌',
+  success: '✅',
+  warning: '⚠️',
+  loading: '⏳',
+};

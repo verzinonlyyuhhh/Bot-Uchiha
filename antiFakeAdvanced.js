@@ -1,8 +1,8 @@
 // antiFakeAdvanced.js
-const config = require("../config");
+const config = require('../config');
 
 module.exports = {
-  name: "antiFakeAdvanced",
+  name: 'antiFakeAdvanced',
   init(ctx) {
     this.config = config.antiFakeAdvanced || {};
     this.autoBan = !!this.config.autoBan;
@@ -13,30 +13,34 @@ module.exports = {
   async onMessage({ sock, msg }) {
     try {
       const jid = msg.key.remoteJid;
-      if (!jid || !jid.endsWith("@g.us")) return;
+      if (!jid || !jid.endsWith('@g.us')) return;
 
       const sender = msg.key.participant || msg.key.remoteJid;
-      const phone = sender.split("@")[0];
-      const onlyDigits = phone.replace(/\D/g, "");
+      const phone = sender.split('@')[0];
+      const onlyDigits = phone.replace(/\D/g, '');
 
-      if (this.whitelist.some(w => onlyDigits.startsWith(w))) return;
+      if (this.whitelist.some((w) => onlyDigits.startsWith(w))) return;
 
       if (onlyDigits.length < this.minLength || /[^0-9]/.test(phone)) {
-        const meta = await sock.groupMetadata(jid).catch(()=>null);
-        const adminIds = meta?.participants?.filter(p => p.admin).map(p => p.id) || [];
+        const meta = await sock.groupMetadata(jid).catch(() => null);
+        const adminIds =
+          meta?.participants?.filter((p) => p.admin).map((p) => p.id) || [];
 
         await sock.sendMessage(jid, {
           text: `⚠️ Hmm… @${phone} entrou no grupo. Seu número parece falso. Não tente enganar os olhos do clã.`,
-          mentions: [sender, ...adminIds]
+          mentions: [sender, ...adminIds],
         });
 
         if (this.autoBan) {
-          await sock.groupParticipantsUpdate(jid, [sender], "remove");
-          await sock.sendMessage(jid, { text: `✅ Removido. Enganar o clã Uchiha não será tolerado.`, mentions: [sender] });
+          await sock.groupParticipantsUpdate(jid, [sender], 'remove');
+          await sock.sendMessage(jid, {
+            text: `✅ Removido. Enganar o clã Uchiha não será tolerado.`,
+            mentions: [sender],
+          });
         }
       }
     } catch (e) {
-      console.error("antiFakeAdvanced error", e);
+      console.error('antiFakeAdvanced error', e);
     }
-  }
+  },
 };

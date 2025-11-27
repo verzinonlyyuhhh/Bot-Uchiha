@@ -4,17 +4,20 @@
 const recentMsgs = {};
 
 module.exports = {
-  name: "antiBot",
+  name: 'antiBot',
 
   async onMessage({ sock, msg, text }) {
     try {
       const sender = msg.key.participant || msg.key.remoteJid;
       const jid = msg.key.remoteJid;
-      const pushName = msg.pushName || "";
+      const pushName = msg.pushName || '';
 
       // 1) nome contendo "bot" (pode ser false positive) -> warn to admins
-      if (pushName.toLowerCase().includes("bot") && jid.endsWith("@g.us")) {
-        await sock.sendMessage(jid, { text: `⚠️ Conta possivelmente automática detectada: @${sender.split("@")[0]}`, mentions: [sender] });
+      if (pushName.toLowerCase().includes('bot') && jid.endsWith('@g.us')) {
+        await sock.sendMessage(jid, {
+          text: `⚠️ Conta possivelmente automática detectada: @${sender.split('@')[0]}`,
+          mentions: [sender],
+        });
       }
 
       // 2) flood de mesma mensagem por vários usuários (botnet) -> warn
@@ -26,11 +29,13 @@ module.exports = {
       recentMsgs[key].last = now;
 
       if (recentMsgs[key].count >= 5) {
-        await sock.sendMessage(jid, { text: `⚠️ Mensagens repetidas detectadas. Possível ação de botnet.` });
+        await sock.sendMessage(jid, {
+          text: `⚠️ Mensagens repetidas detectadas. Possível ação de botnet.`,
+        });
         recentMsgs[key].count = 0;
       }
     } catch (e) {
-      console.error("antiBot error", e);
+      console.error('antiBot error', e);
     }
-  }
+  },
 };

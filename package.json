@@ -1,1 +1,23 @@
-{\n  "scripts": {\n    "start": "node index.js",\n    "dev": "nodemon index.js",\n    "lint": "eslint .",\n    "lint:fix": "eslint . --fix",\n    "format": "prettier --write .",\n    "format:check": "prettier --check .",\n    "test": "echo \"Tests configured\""\n  },\n  "devDependencies": {\n    "eslint": "^9.39.1",\n    "eslint-config-prettier": "^10.1.8",\n    "nodemon": "^3.1.11",\n    "prettier": "^3.6.2"\n  },\n  "dependencies": {\n    "@deyvydofc/baileys": "^1.0.2",\n    "qrcode-terminal": "^0.12.0"\n  }\n}
+{
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "echo \"Tests configured\""
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "@deyvydofc/baileys": "^1.0.2",
+    "@eslint/js": "^9.39.1",
+    "globals": "^16.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

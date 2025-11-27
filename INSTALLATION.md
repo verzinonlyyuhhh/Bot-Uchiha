@@ -1,6 +1,7 @@
 # Installation Guide for Bot-Uchiha
 
 ## Table of Contents
+
 1. [Installation on Termux](#installation-on-termux)
 2. [Installation on Linux](#installation-on-linux)
 3. [Installation on Windows](#installation-on-windows)
@@ -75,7 +76,6 @@
 
 - **Error: `ModuleNotFoundError`:**
   Ensure all dependencies in `requirements.txt` are installed.
-  
 - **On Termux, if you encounter issues:**
   - Ensure you have all the latest updates for Termux.
   - Check if the required packages are correctly installed.
