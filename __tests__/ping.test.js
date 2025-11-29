@@ -1,8 +1,9 @@
-const ping = require('../ping');
+const { ping } = require('../ping');
 
-describe('Ping Command', () => {
-  test('should return pong response', () => {
-    const result = ping.execute();
-    expect(result).toBeDefined();
+// Teste para a funcionalidade do ping
+describe("Ping module", () => {
+  test("Deve retornar PONG", () => {
+    const resultado = ping();
+    expect(resultado).toBe("PONG");
   });
 });
