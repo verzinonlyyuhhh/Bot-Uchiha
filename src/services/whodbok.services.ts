@@ -1,5 +1,5 @@
 import axios from "axios";
-import logger from "../utils/logger.js";
+import logger from "../utils/logger";
 
 const endpoint = process.env.WHODBOK_ENDPOINT;
 const apikey = process.env.WHODBOK_API_KEY;
